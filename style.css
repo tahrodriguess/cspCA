@@ -1,0 +1,75 @@
+/* Password space*/
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #F58B3B;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }    
+   .password {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+
+  .button{
+  background-color: #C26E2F; 
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  }
+  .button:hover{
+    background-color:#75431C;
+   }
+  
+  /* The message box is shown when the user clicks on the password field */
+  .validator {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  .validator p {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  
+  /* Add text color and a checkmark when the requirements are right */
+  .valid {
+    color: #F58B3B;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" icon when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
+  .footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position:relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #C26F2F;
+    color: whitesmoke;
+    text-align: center;
+    }
