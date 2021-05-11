@@ -1,4 +1,4 @@
-//PASSWORD//
+////////////////PASSWORD///////////////////
 var myInput = document.getElementById("psw");
 var lowercase = document.getElementById("lowercase");
 var uppercase = document.getElementById("uppercase");
@@ -6,25 +6,20 @@ var number = document.getElementById("number");
 var special = document.getElementById("special");
 var length = document.getElementById("length");
 
-// When the user clicks on the password field, show the message box
-myInput.onfocus = function() {
-  document.getElementById("message").style.display = "block";
-}
+//password button// 
+function pswCheck() {
+  if (document.pswForm.myInput.value == '') {
+    alert('Passoword checked!');
+    return true;
+     
+  } else {
+    return false;    
+  }       
+};
 
-// When the user clicks outside of the password field, hide the message box
-myInput.onblur = function() {
-  document.getElementById("message").style.display = "none";
-}
-
-//button jQuery//
-$('form[name="pswForm"]').submit(function (event) {
-  // This will prevent form being submitted. 
-  event.preventDefault();
-  // Call your function.
-  myfunction();      
-});
-
+//password check carachters//
 myInput.onkeyup = function() {
+  
   // Validate lowercase letters
   var lowerCaseLetters = /[a-z]/g;
   if(myInput.value.match(lowerCaseLetters)) {
