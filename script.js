@@ -7,14 +7,14 @@ function getData(){
         .then(res => res.json())
         .then(data => {
              
-             let author =  data.results;
+             let user =  data.results;
              
 
              //get data value
              let output = "<h2><center>Costumers</center></h2>"
 
-             //ger data loop through
-             author.forEach(function(lists) {
+             //ger data. Itwill show only 5 costumers//
+             user.slice(-5).forEach(function(lists) {
                 output += `
                 <div class="user">
                     <div class="card mt-4 bg-light">
