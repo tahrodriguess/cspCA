@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CA</title>    
+</head>
+<body>
+     
+  <!---top of the page-->
+  <div class="banner">
+    <header class="head">
+        <img src="/imgs/banner.png" alt="banner"  style="width: 100%;">
+    </header>
+</div>
+
+    <!---PAGE NAV--->
+    <nav class="navPage">
+        <ul>
+            <li><a href="/3page.html">Get to know more about us!</a></li>
+            <li><a href="/index.html ">Back to password page</a></li>
+        </ul>
+    </nav>           
+    
+    <!--user generator-->
+    <div class="user">
+        <h1 class="display-4 mt-3">User generator</h1>
+        <button class="btn btn-warning btn-lg btn-block" id="userBtn">See user</button>
+    </div>
+    <div id="output"></div>
+
+        <!---MENU-->   
+        <section class="menu">
+            <h2 class="section-header">Starters</h2>
+                <div class="menu-items">
+                    <div class="menu-item">                  
+                        <span class="menu-item-title">Cheese Bread</span>
+                        <div class="symbol badge veg">V</div>
+                        <div class="symbol badge GF">GF</div>
+                        <p>Tapioca starch, eggs, milk.</p>
+                          <div class="menu-item-details">
+                            <span class="menu-item-price">€5.99</span>
+                            <button class="btn btn-warning menu-item-button" type="button">ADD</button>
+                        </div>
+                    </div>
+                
+                    <div class="menu-item">
+                        <span class="menu-item-title">Bruschetta</span>
+                        <div class="symbol badge veg">V</div>
+                        <p>Sliced baguette, basil, tomatoes.</p>                    
+                        <div class="menu-item-details">
+                            <span class="menu-item-price">€6.99</span>
+                            <button class="btn btn-warning menu-item-button"type="button">ADD</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-title">Soup</span>
+                        <p>Check the soup of the day with our attendents</p>
+                        <div class="menu-item-details">
+                            <span class="menu-item-price">€7.99</span>
+                            <button class="btn btn-warning menu-item-button" type="button">ADD</button>
+                        </div>
+                    </div>        
+        
+            </section>
+            <section class="menu">
+                <h2 class="section-header">Main</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <span class="menu-item-title">Chicken Parmigiana</span>
+                        <p>Chicken, breadcrumbs, tomato sauce, mozzarella</p>
+                        <div class="menu-item-details">
+                            <span class="menu-item-price">€12.99</span>
+                            <button class="btn btn-warning menu-item-button" type="button">ADD</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-title">Omelette</span>
+                        <div class="symbol badge veg">V</div>
+                        <div class="symbol badge GF">GF</div>                   
+                        <p>Eggs, mozzarela, tomatoes</p>
+                        <div class="menu-item-details">
+                            <span class="menu-item-price">€11.99</span>
+                            <button class="btn btn-warning menu-item-button" type="button">ADD</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-title">Beef Strogonoff</span>
+                        <p> Beef, mushrooms</p>
+                        <div class="menu-item-details">
+                            <span class="menu-item-price">€13.99</span>
+                            <button class="btn btn-warning menu-item-button" type="button">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="menu">
+                <h2 class="section-header">Sides</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <span class="menu-item-title">Chips</span>
+                           <div class="symbol badge veg">V</div>
+                           <div class="symbol badge GF">GF</div>                   
+                           <div class="menu-item-details">
+                            <span class="menu-item-price">2.50</span>
+                            <button class="btn btn-warning menu-item-button" type="button">ADD</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-title">Jasmine Rice</span>
+                        <div class="symbol badge veg">V</div>
+                        <div class="symbol badge GF">GF</div>                   
+                          <div class="menu-item-details">                        
+                            <span class="menu-item-price">€2.00</span>
+                            <button class="btn btn-warning menu-item-button" type="button">ADD</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-title">Onion Rings</span>
+                        <div class="symbol badge veg">V</div>                   
+                         <div class="menu-item-details">                        
+                            <span class="menu-item-price">€3.00</span>
+                            <button class="btn btn-warning menu-item-button" type="button">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="menu">
+                <h2 class="section-header">Drinks</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <span class="menu-item-title">Soft Drink</span>
+                        <p>Fanta, Sprite, Coca-Cola, 7UP</p>
+                        <div class="menu-item-details">
+                            <span class="menu-item-price">€1.50</span>
+                            <button class="btn btn-warning menu-item-button" type="button">ADD</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-title">Sparkling Water</span>
+                           <div class="menu-item-details">
+                            <span class="menu-item-price">€1.99</span>
+                            <button class="btn btn-warning menu-item-button" type="button">ADD</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <span class="menu-item-title">Juice</span>
+                        <p> Orange, Lime, Apple, Passionfruit </p>
+                        <div class="menu-item-details">
+                            <span class="menu-item-price">€2.99</span>
+                            <button class="btn btn-warning menu-item-button" type="button">ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="menu">
+                <h2 class="section-header">CART</h2>
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-price cart-header cart-column">PRICE</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                </div>
+                <div class="cart-items">
+                    
+                     </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price">€0</span>
+                </div>
+                <button class="btn btn-warning btn-lg btn-block btn-purchase" type="button">Purchase</button>
+            </section>
+
+    
+    
+    <!--bottom of the page-->
+    <div class="footer">
+        <p>CCT - Tamiris Rodrigues Duarte (2020294) - 2021</p>
+      </div> 
+    <script src="/script/script.js"></script>
+</body>
+</html>
